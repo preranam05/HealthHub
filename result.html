@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personalized Plan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="planContainer"></div>
+    <script>
+        const planData = JSON.parse(sessionStorage.getItem('planData'));
+        const container = document.getElementById('planContainer');
+        Object.keys(planData.mealPlan).forEach(mealType => {
+            const meals = planData.mealPlan[mealType];
+            const section = document.createElement('div');
+            section.innerHTML = `<h3>${mealType.toUpperCase()}:</h3>`;
+            meals.forEach(meal => {
+                section.innerHTML += `<p>${meal.name}: ${meal.calories} calories, ${meal.protein}, ${meal.carbs}, ${meal.fats}</p>`;
+            });
+            container.appendChild(section);
+        });
+    </script>
+</body>
+</html>

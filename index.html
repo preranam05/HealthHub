@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personalized Diet and Workout Plan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- AOS (Animate on Scroll) Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-3">
+        <div class="container">
+            <!-- HealthHub Logo -->
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="HealthHub (2).png" alt="HealthHub Logo" class="logo me-2">
+                Personalized Health Plans
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#intro">About</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#form">Get Started</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <section id="intro" class="hero-section text-white d-flex align-items-center" style="background-image: url('n1.jpg'); background-size: cover; background-position: center center; min-height: 100vh;">
+
+        <div class="overlay"></div>
+        <div class="container text-center" data-aos="fade-up">
+            <h2 class="display-3 fw-bold" style="color: white; text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);">HealthHub</h2>
+            <p class="lead mt-4">Hello! I'm Prerana. As someone who's navigated personal health challenges, I understand the importance of tailored health solutions. This platform is born out of a passion to extend personalized diet and workout plans that adapt to your unique lifestyle and goals. If you're ready to transform your life, scroll down and let's get started!</p>
+            <a href="#form" class="btn btn-warning btn-lg mt-4">Change your life</a>
+        </div>
+    </section>
+
+    <!-- Enhanced Features Section -->
+<section id="features" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Why Choose Us</h2>
+        <div class="row">
+            <!-- First Feature: Goal-Oriented Plans -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card feature-card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <!-- Icon for Goal-Oriented Plans -->
+                        <i class="fas fa-bullseye fa-3x text-primary mb-3"></i>
+                        <h4 class="card-title">Goal-Oriented Plans</h4>
+                        <p class="card-text">Plans designed specifically to meet your unique health goals.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Feature: Customized Workouts -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card feature-card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <!-- Icon for Customized Workouts -->
+                        <i class="fas fa-dumbbell fa-3x text-success mb-3"></i>
+                        <h4 class="card-title">Customized Workouts</h4>
+                        <p class="card-text">Workouts tailored to your preferences and fitness level.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Feature: Completely Free -->
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card feature-card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <!-- Icon for Completely Free with Bounce Animation -->
+                        <i class="fas fa-gift fa-3x text-warning mb-3 fa-bounce"></i>
+                        <h4 class="card-title">Completely Free <span class="badge bg-success">New</span></h4>
+                        <p class="card-text">Enjoy all our features at no cost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- User Input Form -->
+    <section id="form" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-5 text-center" data-aos="fade-up">Fill Your Details</h2>
+            <form id="user-info-form" class="mx-auto" style="max-width: 600px;" data-aos="fade-up" data-aos-delay="100">
+                <!-- Name -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <!-- Age -->
+                <div class="mb-3">
+                    <label for="age" class="form-label">Age:</label>
+                    <input type="number" id="age" name="age" class="form-control" required>
+                </div>
+                <!-- Weight -->
+                <div class="mb-3">
+                    <label for="weight" class="form-label">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" class="form-control" required>
+                </div>
+                <!-- Height -->
+                <div class="mb-3">
+                    <label for="height" class="form-label">Height (cm):</label>
+                    <input type="number" id="height" name="height" class="form-control" required>
+                </div>
+                <!-- Gender -->
+                <div class="mb-3">
+                    <label for="gender" class="form-label">Gender:</label>
+                    <select id="gender" name="gender" class="form-select" required>
+                        <option value="" disabled selected>Select your gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <!-- Food Preferences -->
+                <div class="mb-3">
+                    <label for="preferences" class="form-label">Food Preferences:</label>
+                    <input type="text" id="preferences" name="preferences" class="form-control">
+                </div>
+                <!-- Allergies -->
+                <div class="mb-3">
+                    <label for="allergies" class="form-label">Allergies:</label>
+                    <input type="text" id="allergies" name="allergies" class="form-control">
+                </div>
+                <!-- Activity Level -->
+                <div class="mb-3">
+                    <label for="activity-level" class="form-label">Activity Level:</label>
+                    <select id="activity-level" name="activity-level" class="form-select" required>
+                        <option value="" disabled selected>Select your activity level</option>
+                        <option value="1">Sedentary</option>
+                        <option value="2">Lightly Active</option>
+                        <option value="3">Moderately Active</option>
+                        <option value="4">Very Active</option>
+                        <option value="5">Extra Active</option>
+                    </select>
+                </div>
+                <!-- Goal -->
+                <div class="mb-3">
+                    <label for="goal" class="form-label">Goal:</label>
+                    <select id="goal" name="goal" class="form-select" required>
+                        <option value="" disabled selected>Select your goal</option>
+                        <option value="Weight Loss">Weight Loss</option>
+                        <option value="Fat Loss">Fat Loss</option>
+                        <option value="Muscle Gain">Muscle Gain</option>
+                        <option value="Maintenance">Maintenance</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg w-100 mt-4">Generate Plan</button>
+            </form>
+        </div>
+
+        <!-- Generated Plan Result Section -->
+        <div id="planResult" class="plan-result container my-5 d-none">
+            <div id="generatedPlan"></div> <!-- Plan will be inserted here -->
+            <div class="contact-info mt-4 text-center">
+                <p>Have questions? Contact us anytime!</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-secondary text-white">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">What Our Clients Say</h2>
+            <div class="row">
+                <!-- Testimonial 1 -->
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="card bg-dark text-white shadow-sm h-100">
+                        <div class="card-body">
+                            <p class="card-text">"This personalized plan changed my life! I've never felt better."</p>
+                            <p class="text-end fw-bold">- Lakshmikantha</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card bg-dark text-white shadow-sm h-100">
+                        <div class="card-body">
+                            <p class="card-text">"Tailored workouts and diets that fit my busy schedule. Highly recommended!"</p>
+                            <p class="text-end fw-bold">- Surya</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="300">
+                    <div class="card bg-dark text-white shadow-sm h-100">
+                        <div class="card-body">
+                            <p class="card-text">"A game-changer for my fitness journey. Exceptional support."</p>
+                            <p class="text-end fw-bold">- Manish Choudhary</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+<section id="faq" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="accordion-header" id="faqHeading1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                        How do I get my personalized plan?
+                    </button>
+                </h2>
+                <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Fill out the form with your details, and we'll generate a plan tailored to you.
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 2 (Updated Answer) -->
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="accordion-header" id="faqHeading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                        Can I access my plan on mobile devices?
+                    </button>
+                </h2>
+                <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We're currently working on making our platform mobile-friendly. Hang tight, and stay tuned for updates!
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ Item 3 (New Question and Answer) -->
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                <h2 class="accordion-header" id="faqHeading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                        What should I do if I get an error message while generating the plan?
+                    </button>
+                </h2>
+                <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        If you encounter an error message while generating your plan, please refresh the page or click on "Generate Plan" again and wait patiently. If the issue persists, please contact us for assistance.
+                    </div>
+                </div>
+            </div>
+            <!-- Optional: Additional FAQ Items -->
+            <!-- You can add more FAQ items here if needed -->
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+<section id="contact" class="bg-dark text-white py-5">
+    <div class="container text-center">
+        <h2 data-aos="fade-up">Contact Us</h2>
+        <p class="lead" data-aos="fade-up" data-aos-delay="100"><strong>Phone:</strong> +91 9845859025</p>
+        <p class="lead" data-aos="fade-up" data-aos-delay="200"><strong>Email:</strong> <a href="mailto:preranamadhusudhan07@gmail.com" class="text-white">preranamadhusudhan07@gmail.com</a></p>
+        <!-- Social Media Icons -->
+        <div class="mt-4" data-aos="fade-up" data-aos-delay="300">
+            
+            <a href="https://www.instagram.com/healthhub2760/profilecard/?igsh=MWJnaXZkbWRmYm9oYw==" class="text-white mx-2" target="_blank" rel="noopener noreferrer" data-bs-toggle="tooltip" title="Instagram">
+            <i class="fab fa-instagram fa-2x"></i>
+</a>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">© 2024 Personalized Health Plans. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+    <!-- AOS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: true,
+    });
+</script>
+
+    <!-- Include this script at the end of your body -->
+    <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+  
+</body>
+</html>
